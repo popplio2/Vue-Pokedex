@@ -102,9 +102,8 @@ h3 {
   background-color: #fff;
 }
 .poke-card {
-  background-color: #fff;
   transform-style: preserve-3d;
-  box-shadow: 0 0 3rem 1rem #fff;
+  box-shadow: 0 0 3rem 1rem rgba(255, 252, 80, .8);
   border: #333 0.3rem solid;
   padding: 2rem;
   width: 35vw;
@@ -162,7 +161,7 @@ li:nth-of-type(6) {
   width: 100%;
 }
 .poke-stat div {
-  padding: 5px;
+  padding: .5rem;
   transform: translateZ(2rem);
   font-size: 1.6rem;
 }
@@ -183,5 +182,42 @@ li:nth-of-type(6) {
   100% {
     opacity: 1;
   }
+}
+@media only screen and (max-width: 1200px) {
+  .poke-card {
+      width: 45vw;
+  }
+ }
+@media only screen and (max-width: 768px) {
+  .poke-card {
+      width: 80vw;
+      margin-top: 2rem;
+  }
+  h2 {
+  -webkit-text-stroke: .2rem #fff;
+}
+h3 {
+  font-size: 1.8rem;
+  padding: 2rem 4rem;
+}
+img {
+  width: 15rem;
+}
+.poke-stats {
+  gap: 1rem;
+}
+.poke-stat {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 800;
+  /* width: 40%; */
+  list-style: none;
+  width: 100%;
+}
+.poke-stat div {
+  padding: .1rem;
+  transform: translateZ(2rem);
+  font-size: 1.6rem;
+}
 }
 </style>

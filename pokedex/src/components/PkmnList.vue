@@ -44,8 +44,14 @@ export default {
 
 <style scoped>
 h1 {
+  text-transform: uppercase;
   color: #fff;
   font-size: 7rem;
    -webkit-text-stroke: .2rem#111;
+   transition: all .3s;
+}
+h1:hover {
+  letter-spacing: .5rem;
 }
 </style>
+
