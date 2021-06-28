@@ -1,0 +1,46 @@
+html,
+body,
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #e43a3a;
+}
+.home {
+  background-color: #e43a3a;
+}
+.link,
+.link:visited,
+.link:link {
+  color: #fff;
+  text-decoration: none;
+}
+.back-link {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.pokemon-table {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.pokemon-list-item {
+  width: 25rem;
+  color: #111;
+  list-style: none;
+  margin: 2.5rem auto;
+  transition: all 0.3s;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.pokemon-list-item img {
+  width: 50%;
+}
+.pokemon-list-item:hover {
+  transform: scale(1.1);
+}
