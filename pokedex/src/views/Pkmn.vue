@@ -103,7 +103,7 @@ h3 {
 }
 .poke-card {
   transform-style: preserve-3d;
-  box-shadow: 0 0 3rem 1rem rgba(255, 252, 80, .8);
+  box-shadow: 0 0 3rem 1rem #fff;
   border: #333 0.3rem solid;
   padding: 2rem;
   width: 35vw;
