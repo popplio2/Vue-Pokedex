@@ -1,6 +1,7 @@
 <template>
   <router-link :to="pkmnPath" class="link">
     <div class="pkmn-container">
+      <h2>#{{ singlePokemon.id }}</h2>
       <h1 id="query">{{ pokemon.name }}</h1>
       <img :src="sprite" alt="pokemon image" />
     </div>
@@ -50,6 +51,7 @@ export default {
   color: #111;
   font-size: 2rem;
   margin-bottom: 1rem;
+   display: inline;
 }
 .pkmn-container {
   background-color: #fff;
@@ -57,5 +59,12 @@ export default {
   color: #111;
   border: #333 0.3rem solid;
   border-radius: 1rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: left;
+   display: inline;
+   margin-right: 2rem;
 }
 </style>

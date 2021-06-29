@@ -35,6 +35,8 @@ html {
 }
 .pokemon-list-item img {
   width: 50%;
+  display: block;
+  margin: 1rem auto;
 }
 .pokemon-list-item:hover {
   transform: scale(1.1);

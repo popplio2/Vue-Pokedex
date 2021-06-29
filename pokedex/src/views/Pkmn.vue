@@ -1,6 +1,7 @@
 <template>
     <div class="container">
         <div :style="backgroundColor" v-tilt="{ speed: 2000, perspective: 1000, glare: true }" class="poke-card">
+            <h2 class="poke-number">#{{ number }}</h2>
             <h2 :style="textColor">{{ singlePokemon.name }}</h2>
             <img :src="sprite" alt="">
             <h3 :style="textColor">{{ singlePokemon.types[0].type.name }}</h3>
@@ -19,6 +20,7 @@ export default {
     data() {
         return {
             singlePokemon: {},
+            number: "",
             stats: [],
             typeColor: "",
             colors: {
@@ -64,9 +66,11 @@ export default {
           `https://pokeapi.co/api/v2/pokemon/${this.$route.params.id}`
         );
         const singlePokemon = await result.json();
+        console.log(singlePokemon);
         this.singlePokemon = singlePokemon;
         this.stats = singlePokemon.stats;
         this.typeColor = this.singlePokemon.types[0].type.name;
+        this.number = singlePokemon.id;
       } catch (error) {
           alert(error);
       }
@@ -91,6 +95,10 @@ h2 {
   text-transform: uppercase;
   transform: translateZ(9rem);
   letter-spacing: .2rem;
+}
+.poke-number {
+    color: #fff;
+    -webkit-text-stroke: 0;
 }
 h3 {
   font-size: 2.5rem;
