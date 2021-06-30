@@ -51,7 +51,7 @@ export default {
   color: #111;
   font-size: 2rem;
   margin-bottom: 1rem;
-   display: inline;
+  display: inline;
 }
 .pkmn-container {
   background-color: #fff;
@@ -64,7 +64,7 @@ h2 {
   font-size: 2rem;
   font-weight: 300;
   text-align: left;
-   display: inline;
-   margin-right: 2rem;
+  display: inline;
+  margin-right: 2rem;
 }
 </style>
